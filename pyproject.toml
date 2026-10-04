@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reeborg-maze"
+version = "0.1.0"
+description = "Right-wall-following maze solver for Reeborg's world (100 Days of Code, day 6)."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100_days_of_code/006-a_robot_in_Reeborg_s_world"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+reeborg_maze = ["py.typed"]

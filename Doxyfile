@@ -1,0 +1,14 @@
+# Minimal Doxygen configuration; unspecified options use Doxygen defaults.
+# Generate docs with:  doxygen Doxyfile   (output: docs/html/index.html)
+
+PROJECT_NAME           = "Reeborg Maze"
+PROJECT_BRIEF          = "Right-wall-following maze solver for Reeborg's world"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = src
+FILE_PATTERNS          = *.py
+RECURSIVE              = YES
+OPTIMIZE_OUTPUT_JAVA   = YES
+EXTRACT_ALL            = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
